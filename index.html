@@ -236,7 +236,8 @@
                     }
                     */
                     if(checkerboard){
-                        if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                        //if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+			if (fract(z.x)<0.1 || fract(z.y)<0.1) {
                             bgcolor = vec4(0.0,0.0,0.0,1.0);
                         }
                     }
