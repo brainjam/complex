@@ -237,7 +237,7 @@
                     */
                     if(checkerboard){
                         //if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
-			if (fract(z.x)<0.1 || fract(z.y)<0.1) {
+                        if (fract(z.x)<0.1 || fract(z.y)<0.1) {
                             bgcolor = vec4(0.0,0.0,0.0,1.0);
                         }
                     }
@@ -278,7 +278,8 @@
                             float r = length(z);
                             bgcolor = hsv_to_rgb(-arg(z) +3.14159, 1.0, 1.0/log(r+2.7));
                             if(checkerboard){
-                                if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                                //if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                                if (fract(z.x)<0.1 || fract(z.y)<0.1) {
                                     bgcolor = vec4(0.0,0.0,0.0,1.0);
                                 }
                             }
@@ -1146,7 +1147,8 @@
                     }
                     */
                     if(checkerboard){
-                        if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                        //if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                        if (fract(z.x)<0.1 || fract(z.y)<0.1) {
                             bgcolor = vec4(0.0,0.0,0.0,1.0);
                         }
                     }
@@ -1187,7 +1189,8 @@
                             float r = length(z);
                             bgcolor = hsv_to_rgb($huefun$, $satfun$, $valfun$);
                             if(checkerboard){
-                                if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                                //if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                                if (fract(z.x)<0.1 || fract(z.y)<0.1) {
                                     bgcolor = vec4(0.0,0.0,0.0,1.0);
                                 }
                             }
@@ -1933,7 +1936,8 @@
                     }
                     */
                     if(checkerboard){
-                        if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                        //if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                        if (fract(z.x)<0.1 || fract(z.y)<0.1) {
                             bgcolor = vec4(0.0,0.0,0.0,1.0);
                         }
                     }
@@ -1974,7 +1978,8 @@
                             float r = length(z);
                             bgcolor = hsv_to_rgb($huefun$, $satfun$, $valfun$);
                             if(checkerboard){
-                                if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                                //if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                                if (fract(z.x)<0.1 || fract(z.y)<0.1) {
                                     bgcolor = vec4(0.0,0.0,0.0,1.0);
                                 }
                             }
@@ -2657,7 +2662,8 @@
                     }
                     */
                     if(checkerboard){
-                        if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                        //if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                        if (fract(z.x)<0.1 || fract(z.y)<0.1) {
                             bgcolor = vec4(0.0,0.0,0.0,1.0);
                         }
                     }
@@ -2698,7 +2704,8 @@
                             float r = length(z);
                             bgcolor = hsv_to_rgb($huefun$, $satfun$, $valfun$);
                             if(checkerboard){
-                                if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                                //if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
+                                if (fract(z.x)<0.1 || fract(z.y)<0.1) {
                                     bgcolor = vec4(0.0,0.0,0.0,1.0);
                                 }
                             }
