@@ -1146,10 +1146,11 @@
                         bgcolor = vec4(0.0,0.0,0.0,1.0);
                     }
                     */
+                    // complexfs
                     if(checkerboard){
                         //if (mod(floor(z.x/size),2.0) != mod(floor(z.y/size),2.0)) {
                         if (fract(16.0*z.x)<0.1*zoom.x || fract(16.0*z.y)<0.1*zoom.y) {
-                            bgcolor = vec4(0.0,0.0,0.0,1.0);
+                            bgcolor = vec4(0.4,0.4,0.4,1.0);
                         }
                     }
                 } 
